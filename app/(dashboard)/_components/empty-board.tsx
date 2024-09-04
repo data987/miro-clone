@@ -19,7 +19,7 @@ export const EmptyBoard = () => {
       orgId: organization.id,
       title: "Untitled",
     })
-      .then((id) => {
+      .then((_) => {
         toast.success("Board created!");
       })
       .catch(() => toast.error("Failed to create board"));
